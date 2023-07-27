@@ -9,7 +9,7 @@ pipeline {
     stage('Build maven code') {
       steps {
       container('mavencontainer') {  
-          sh "mvn clean install"
+          sh "mvn clean package"
        }    
       }
     }
